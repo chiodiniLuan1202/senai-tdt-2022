@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Download docker image
-        run: docker pull <usuario-docker-hub>/senai-tdt:latest
+        run: docker pull luan12/senai-tdt:latest
 
       - name: Remove all container
         run: docker container rm -f $(docker container ps -a -q) || echo "Nenhum container"
